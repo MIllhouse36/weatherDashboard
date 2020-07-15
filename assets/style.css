@@ -1,0 +1,13 @@
+.opener {
+  background-image: url("images/sky-sunny-clouds-cloudy-3768.jpg");
+  
+  height: 50rem;
+  width: 50rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#currentUv {
+  background-color: aqua;
+}
