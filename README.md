@@ -38,6 +38,4 @@ Write HTML
 Write script
 Test 
 APIKEY: 890f39f45059cd40d76b8d16d77d5114# weatherapp
-# weatherapp
-# weatherapp
-# weatherapp
+
