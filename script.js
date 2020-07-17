@@ -15,7 +15,7 @@ $("#form").on("submit", function (event) {
     }).then(function (response) {
       console.log(response);
       $("#currentCity").text(response.name);
-      $("#currentIcon").attr("src", "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
+      $("#currentIcon").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
       $("#currentIcon").attr("alt", "weather icon");
       var currentUtcSeconds = response.dt;
         var currentDate = new Date(0); // The 0 there is the key, which sets the date to the epoch
@@ -30,7 +30,7 @@ $("#form").on("submit", function (event) {
       var long = (response.coord.lon)
       $.ajax({
         
-        url: "http://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long +"&exclude=hourly,minutely&appid=890f39f45059cd40d76b8d16d77d5114",
+        url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long +"&exclude=hourly,minutely&appid=890f39f45059cd40d76b8d16d77d5114",
         method: "GET",
       }).then(function (respond) {
         $("#currentUv").text(respond.current.uvi)
@@ -48,7 +48,7 @@ $("#form").on("submit", function (event) {
         
         
 
-        $("#forecast-1-img").attr("src", "http://openweathermap.org/img/wn/" + respond.daily[1].weather[0].icon + "@2x.png");
+        $("#forecast-1-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[1].weather[0].icon + "@2x.png");
         $("#forecast-1-img").attr("alt", "weather icon");
         var utcSeconds = respond.daily[1].dt;
         var date1 = new Date(0); // The 0 there is the key, which sets the date to the epoch
@@ -58,7 +58,7 @@ $("#form").on("submit", function (event) {
         $("#forecast-1-temp").text(tempF1.toFixed(0) + "°");
         $("#forecast-1-humi").text(respond.daily[1].humidity + "%");
 
-        $("#forecast-2-img").attr("src", "http://openweathermap.org/img/wn/" + respond.daily[2].weather[0].icon + "@2x.png");
+        $("#forecast-2-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[2].weather[0].icon + "@2x.png");
         $("#forecast-2-img").attr("alt", "weather icon");
         var utcSeconds = respond.daily[2].dt;
         var date2 = new Date(0); // The 0 there is the key, which sets the date to the epoch
@@ -68,7 +68,7 @@ $("#form").on("submit", function (event) {
         $("#forecast-2-temp").text(tempF2.toFixed(0) + "°");
         $("#forecast-2-humi").text(respond.daily[2].humidity + "%");
 
-        $("#forecast-3-img").attr("src", "http://openweathermap.org/img/wn/" + respond.daily[3].weather[0].icon + "@2x.png");
+        $("#forecast-3-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[3].weather[0].icon + "@2x.png");
         $("#forecast-3-img").attr("alt", "weather icon");
         var utcSeconds = respond.daily[3].dt;
         var date3 = new Date(0); // The 0 there is the key, which sets the date to the epoch
@@ -78,7 +78,7 @@ $("#form").on("submit", function (event) {
         $("#forecast-3-temp").text(tempF3.toFixed(0) + "°");
         $("#forecast-3-humi").text(respond.daily[3].humidity + "%");
 
-        $("#forecast-4-img").attr("src", "http://openweathermap.org/img/wn/" + respond.daily[4].weather[0].icon + "@2x.png");
+        $("#forecast-4-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[4].weather[0].icon + "@2x.png");
         $("#forecast-4-img").attr("alt", "weather icon");
         var utcSeconds = respond.daily[4].dt;
         var date4 = new Date(0); // The 0 there is the key, which sets the date to the epoch
@@ -88,7 +88,7 @@ $("#form").on("submit", function (event) {
         $("#forecast-4-temp").text(tempF4.toFixed(0) + "°");
         $("#forecast-4-humi").text(respond.daily[4].humidity + "%");
 
-        $("#forecast-5-img").attr("src", "http://openweathermap.org/img/wn/" + respond.daily[5].weather[0].icon + "@2x.png");
+        $("#forecast-5-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[5].weather[0].icon + "@2x.png");
         $("#forecast-5-img").attr("alt", "weather icon");
         var utcSeconds = respond.daily[5].dt;
         var date5 = new Date(0); // The 0 there is the key, which sets the date to the epoch
