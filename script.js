@@ -51,18 +51,17 @@ $("#form").on("submit", function (event) {
     })
 }
 
-  
-  
 });
+
 function renderHistory(city){
   var historyCard = $("#history-card");
+  historyCard.text("");
   var searchedCities = [];
-    historyCard.text("");
   if (JSON.parse(localStorage.getItem("Searched"))) {
     searchedCities = JSON.parse(localStorage.getItem("Searched"));
     $.each(searchedCities, function(i, item){
-     var listItem = $("<p>"+ item + "</p>");
-     historyCard.append(listItem);
+     var listItem = $("<p id="+item+">"+ item + "</p>");
+    historyCard.append(listItem);
      });
   }
   if(!searchedCities.includes(city)){
