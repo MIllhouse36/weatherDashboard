@@ -1,0 +1,22 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "![weatherapp](https://user-images.githubusercontent.com/37388720/120109730-ba213580-c138-11eb-9d1e-05393a518593.png)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MIllhouse36/weatherDashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MIllhouse36/weatherDashboard/issues"
+  },
+  "homepage": "https://github.com/MIllhouse36/weatherDashboard#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
