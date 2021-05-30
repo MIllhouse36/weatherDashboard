@@ -1,106 +1,36 @@
 # Weather Dashboard
+![Budget-tracker](https://user-images.githubusercontent.com/37388720/119863137-42100100-bee7-11eb-9dc4-358de2aa0f3c.png)
 
-<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/scottydocs/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+## Description
 
-Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
+## Usage 
+ Using this app is as simple as going [the deployed website](https://millhouse36.github.io/weatherDashboard/)
 
-## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
-* You have read `<guide/link/documentation_related_to_project>`.
-
-## Installing <project_name>
-
-To install <project_name>, follow these steps:
-
-Linux and macOS:
-```
-<install_command>
-```
-
-Windows:
-```
-<install_command>
-```
-## Using <project_name>
-
-To use <project_name>, follow these steps:
-
-```
-<usage_example>
-```
-
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
-
-## Contributing to <project_name>
-<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
-To contribute to <project_name>, follow these steps:
+## Contributing to Weather Dashboard  
+To contribute to Weather Dashboard , follow these steps:
 
 1. Fork this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
+2. Create a branch: `git checkout -b Weather Dashboard  `.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
+4. Push to the original branch: `git push origin Weather Dashboard /<location>`
 5. Create the pull request.
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 
-## Contact
+## Project status
+Development of this projects has been halted with plans to covert this project into a full stack react application with user authentication.
 
-If you want to contact me you can reach me at <your_email@address.com>.
+## Host
+https://millhouse36.github.io/weatherDashboard/
 
-## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [<license_name>](<link>).
+## Author and Contact
+If you have and questions contact me @
+[Kevin Millhouse](https://github.com/MIllhouse36)
+or [Email](https://millhousekevin@gmail.com)
 
-# USER STORY:
-AS A person who wants to know current weather conditions
-I WANT an app that shows me weather conditions of anywhere I input
-SO THAT I can be prepared for inclement weather conditions anywhere 
-
-# ACCEPTANCE CRITERIA/ MVP:
-WHEN I search for a city 
-City search input
-Previous search card
-THEN I am shown:
-
-# current conditions:
-* City name
-* Date 
-* Weather condition Icon
-* Temperature
-* Humidity
-* Wind speed
-* Color-coded UV index block
-
-# 5-day forecast: 
-* Date 
-* Weather condition Icon
-* Temperature
-* Humidity
-
-# searched cities:
-* Saves search history of cities to local storage
-
-# Icebox:
- * Previous searches dropdown underneath search input?
-
-Tasks for weather app: 
-* Find 3 examples of app 1 browser, 1 tablet, 1 mobile  
-* Design wireframe
-Write HTML 
-Write script
-Test 
-APIKEY: 890f39f45059cd40d76b8d16d77d5114# weatherapp
 
