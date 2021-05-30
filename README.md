@@ -1,5 +1,5 @@
 # Weather Dashboard
-![Budget-tracker](https://user-images.githubusercontent.com/37388720/119863137-42100100-bee7-11eb-9dc4-358de2aa0f3c.png)
+![weatherapp](https://user-images.githubusercontent.com/37388720/120109730-ba213580-c138-11eb-9d1e-05393a518593.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
