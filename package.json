@@ -2,9 +2,11 @@
   "name": "weather-dashboard",
   "version": "1.0.0",
   "description": "![weatherapp](https://user-images.githubusercontent.com/37388720/120109730-ba213580-c138-11eb-9d1e-05393a518593.png)",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/MIllhouse36/weatherDashboard#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.5.0",
     "express": "^4.17.1"
   }
 }
