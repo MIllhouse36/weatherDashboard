@@ -13,7 +13,7 @@
 <body>
   <div class="container">
    
-    <div class="row mx-auto">
+    <div class="row opener mx-auto">
 
       <div class="col-2">
         <div class="card-content ">
@@ -21,8 +21,8 @@
         </div>
       </div>
       
-      <form id="form" class="opener  col-8 text-center">
-        <div class="my-0">
+      <form id="form" class="  col-8 text-center">
+        <div class="my-0 text-white text-center">
           <h4 class="text-white col-12">Weather</h4>
           <input class="col-12 text-center" id="textarea" type="text">
           <button id="submit" class="pt-4 btn col-12" type="submit">
@@ -31,99 +31,87 @@
             </svg>
           </button>
 
-          <div class="">
-            <h4 class="text-white" id="currentCity"></h4>
+        <div class="" >
+            <h4 id="currentCity"></h4>
             <img id="currentIcon">
-            <p class="text-white"id="currentDate"></p>
-          <p id="currentTemp"></p>
-          <p id="currentHumi"></p>
-          <p id="currentWind"></p>
-          <p id="currentUv"></p>
-            <div>
+            <p class=" mx-auto"id="currentDate"></p>
+            <p id="currentTemp"></p>
+            <p id="currentHumi"></p>
+            <p id="currentWind"></p>
+            <p id="currentUv"></p>
+        </div>
         </div>
       </form>
      
-    </div>
-          
-
-          <!-- <button id="clearbutton" class="btn " type="clear">
-            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-            </svg>
-          </button> -->
-        
-      
-    
-
-    <div class="row center-align">
-
-      <div id="forecast-1" class="col">
-        <div class="card">
-          <div class="card-image">
-            <img id="forecast-1-img" src="">
-          </div>
-          <div class="card-content">
-            <p id="forecast-1-date"></p>
-            <p id="forecast-1-temp"></p>
-            <p id="forecast-1-humi"></p>
+      <div class="row justify-content-center">
+        <div id="forecast-1" class=" col-md-2 col-sm-12">
+          <div class="card">
+            <div class="card-image">
+              <img id="forecast-1-img" src="">
+            </div>
+            <div class="card-content">
+              <p id="forecast-1-date"></p>
+              <p id="forecast-1-temp"></p>
+              <p id="forecast-1-humi"></p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div id="forecast-2" class="col">
-        <div class="card">
-          <div class="card-image">
-            <img id="forecast-2-img" src="">
-          </div>
-          <div class="card-content">
-            <p id="forecast-2-date"></p>
-            <p id="forecast-2-temp"></p>
-            <p id="forecast-2-humi"></p>
-          </div>
-        </div>
-      </div>
-
-      <div id="forecast-3" class="col">
-        <div class="card">
-          <div class="card-image">
-            <img id="forecast-3-img" src="">
-          </div>
-          <div class="card-content">
-            <p id="forecast-3-date"></p>
-            <p id="forecast-3-temp"></p>
-            <p id="forecast-3-humi"></p>
+  
+        <div id="forecast-2" class="col-md-2 col-sm-12">
+          <div class="card">
+            <div class="card-image">
+              <img id="forecast-2-img" src="">
+            </div>
+            <div class="card-content">
+              <p id="forecast-2-date"></p>
+              <p id="forecast-2-temp"></p>
+              <p id="forecast-2-humi"></p>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div id="forecast-4" class="col">
-        <div class="card">
-          <div class="card-image">
-            <img id="forecast-4-img" src="">
-          </div>
-          <div class="card-content">
-            <p id="forecast-4-date"></p>
-            <p id="forecast-4-temp"></p>
-            <p id="forecast-4-humi"></p>
-          </div>
-        </div>
-      </div>
-
-      <div id="forecast-5" class="col">
-        <div class="card">
-          <div class="card-image">
-            <img id="forecast-5-img" src="">
-          </div>
-          <div class="card-content">
-            <p id="forecast-5-date"></p>
-            <p id="forecast-5-temp"></p>
-            <p id="forecast-5-humi"></p>
+  
+        <div id="forecast-3" class="col-md-2 col-sm-12">
+          <div class="card">
+            <div class="card-image">
+              <img id="forecast-3-img" src="">
+            </div>
+            <div class="card-content">
+              <p id="forecast-3-date"></p>
+              <p id="forecast-3-temp"></p>
+              <p id="forecast-3-humi"></p>
+            </div>
           </div>
         </div>
+  
+        <div id="forecast-4" class="col-md-2 col-sm-12">
+          <div class="card">
+            <div class="card-image">
+              <img id="forecast-4-img" src="">
+            </div>
+            <div class="card-content">
+              <p id="forecast-4-date"></p>
+              <p id="forecast-4-temp"></p>
+              <p id="forecast-4-humi"></p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="forecast-5" class="col-md-2 col-sm-12">
+          <div class="card">
+            <div class="card-image">
+              <img id="forecast-5-img" src="">
+            </div>
+            <div class="card-content">
+              <p id="forecast-5-date"></p>
+              <p id="forecast-5-temp"></p>
+              <p id="forecast-5-humi"></p>
+            </div>
+          </div>
+        </div>
+  
       </div>
+    </div> 
 
-    </div>
 
 
   </div>
