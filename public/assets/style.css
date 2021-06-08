@@ -22,8 +22,10 @@ select:-webkit-autofill:focus{
   border-radius: 0;
   color:#ffffff;
   cursor:default;
-  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #ffffff !important;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  width:25rem;
    
 }
 /* input:-internal-autofill-selected {
@@ -44,4 +46,5 @@ select:-webkit-autofill:focus{
 
 #currentUv {
   background-color: aqua;
+  max-width: 1rem;
 }
