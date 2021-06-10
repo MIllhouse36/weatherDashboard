@@ -13,96 +13,98 @@
 
 <body>
   <div class="container ">
-    <div class="col-2">
-      <div class="card-content ">
-        <h5 id="history-card">History</h5>
+    <div class="row">
+      <div class="col-2 col-sm-12">
+        <div class="card-content ">
+          <h5 id="history-card">History</h5>
+        </div>
       </div>
-    </div>
-    <div class="container opener col-8">
 
-      <div class="row  mx-auto text-center text-white">
-        <form id="form">
-            <h4 class="col-12">Weather</h4>
-            <input class="col-12 text-center" id="textarea" type="text">
-            <button id="submit" class="pt-4 btn col-12" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="#ffffff" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-            </button>
-              <h4 id="currentCity"></h4>
-              <img id="currentIcon">
-              <p id="currentDate"></p>
-              <p id="currentTemp"></p>
-              <p id="currentHumi"></p>
-              <p id="currentWind"></p>
-              <p id="currentUv"></p>
-        </form>
+      <div class="container opener col-8 col-sm-12">
+        <div class="row  mx-auto text-center text-white">
+          <form id="form">
+              <h4 class="col-12">Weather</h4>
+              <input class="col-12 text-center" id="textarea" type="text">
+              <button id="submit" class="pt-4 btn col-12" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="#ffffff" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+                <h4 id="currentCity"></h4>
+                <img id="currentIcon">
+                <p id="currentDate"></p>
+                <p id="currentTemp"></p>
+                <p id="currentHumi"></p>
+                <p id="currentWind"></p>
+                <p id="currentUv"></p>
+          </form>
+        </div>
+        
+            <div class="row justify-content-center">
+              <div id="forecast-1" class=" col-md-2 col-sm-12">
+                <div class="card">
+                  <div class="card-image">
+                    <img id="forecast-1-img" src="">
+                  </div>
+                  <div class="card-content">
+                    <p id="forecast-1-date"></p>
+                    <p id="forecast-1-temp"></p>
+                    <p id="forecast-1-humi"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="forecast-2" class="col-md-2 col-sm-12">
+                <div class="card">
+                  <div class="card-image">
+                    <img id="forecast-2-img" src="">
+                  </div>
+                  <div class="card-content">
+                    <p id="forecast-2-date"></p>
+                    <p id="forecast-2-temp"></p>
+                    <p id="forecast-2-humi"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="forecast-3" class="col-md-2 col-sm-12">
+                <div class="card">
+                  <div class="card-image">
+                    <img id="forecast-3-img" src="">
+                  </div>
+                  <div class="card-content">
+                    <p id="forecast-3-date"></p>
+                    <p id="forecast-3-temp"></p>
+                    <p id="forecast-3-humi"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="forecast-4" class="col-md-2 col-sm-12">
+                <div class="card">
+                  <div class="card-image">
+                    <img id="forecast-4-img" src="">
+                  </div>
+                  <div class="card-content">
+                    <p id="forecast-4-date"></p>
+                    <p id="forecast-4-temp"></p>
+                    <p id="forecast-4-humi"></p>
+                  </div>
+                </div>
+              </div>
+              <div id="forecast-5" class="col-md-2 col-sm-12">
+                <div class="card">
+                  <div class="card-image">
+                    <img id="forecast-5-img" src="">
+                  </div>
+                  <div class="card-content">
+                    <p id="forecast-5-date"></p>
+                    <p id="forecast-5-temp"></p>
+                    <p id="forecast-5-humi"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
-      
-          <div class="row justify-content-center">
-            <div id="forecast-1" class=" col-md-2 col-sm-12">
-              <div class="card">
-                <div class="card-image">
-                  <img id="forecast-1-img" src="">
-                </div>
-                <div class="card-content">
-                  <p id="forecast-1-date"></p>
-                  <p id="forecast-1-temp"></p>
-                  <p id="forecast-1-humi"></p>
-                </div>
-              </div>
-            </div>
-            <div id="forecast-2" class="col-md-2 col-sm-12">
-              <div class="card">
-                <div class="card-image">
-                  <img id="forecast-2-img" src="">
-                </div>
-                <div class="card-content">
-                  <p id="forecast-2-date"></p>
-                  <p id="forecast-2-temp"></p>
-                  <p id="forecast-2-humi"></p>
-                </div>
-              </div>
-            </div>
-            <div id="forecast-3" class="col-md-2 col-sm-12">
-              <div class="card">
-                <div class="card-image">
-                  <img id="forecast-3-img" src="">
-                </div>
-                <div class="card-content">
-                  <p id="forecast-3-date"></p>
-                  <p id="forecast-3-temp"></p>
-                  <p id="forecast-3-humi"></p>
-                </div>
-              </div>
-            </div>
-            <div id="forecast-4" class="col-md-2 col-sm-12">
-              <div class="card">
-                <div class="card-image">
-                  <img id="forecast-4-img" src="">
-                </div>
-                <div class="card-content">
-                  <p id="forecast-4-date"></p>
-                  <p id="forecast-4-temp"></p>
-                  <p id="forecast-4-humi"></p>
-                </div>
-              </div>
-            </div>
-            <div id="forecast-5" class="col-md-2 col-sm-12">
-              <div class="card">
-                <div class="card-image">
-                  <img id="forecast-5-img" src="">
-                </div>
-                <div class="card-content">
-                  <p id="forecast-5-date"></p>
-                  <p id="forecast-5-temp"></p>
-                  <p id="forecast-5-humi"></p>
-                </div>
-              </div>
-            </div>
-          </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
