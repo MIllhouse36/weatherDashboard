@@ -49,6 +49,8 @@ $("#form").on("submit", function (event) {
         renderHistory(cityName);
       }) 
     })
+} else {
+  alert("must type in a city")
 }
 
 });
