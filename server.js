@@ -14,6 +14,6 @@ app.use(express.static("public"));
 //   res.sendFile(__dirname + 'index.html');
 // }); 
 
-app.listen(PORT, ()=>{
+app.listen(PORT, () => {
   console.log(`Server listening on: http://localhost: ${PORT}`)
 })

@@ -3,15 +3,14 @@ input[type="text"]:focus,
 input[type="text"]:active,
 input[type="text"]:read-write,
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active
-textarea:-webkit-autofill,
+input:-webkit-autofill:active textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus{
+select:-webkit-autofill:focus {
   background: transparent;
   border: none;
   border-bottom: 1px solid #ffffff;
@@ -20,13 +19,12 @@ select:-webkit-autofill:focus{
   -moz-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-  color:#ffffff;
-  cursor:default;
+  color: #ffffff;
+  cursor: default;
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #ffffff !important;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  width:25rem;
-   
+  width: 25rem;
 }
 /* input:-internal-autofill-selected {
   
@@ -41,7 +39,6 @@ select:-webkit-autofill:focus{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
 
 #currentUv {
