@@ -11,36 +11,40 @@ $("#form").on("submit", function (event) {
         "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=890f39f45059cd40d76b8d16d77d5114",
       method: "GET",
     }).then(function (response) {
-      console.log(response);
-      $("#currentCity").text(response.name);
-      $("#currentIcon").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
-      $("#currentIcon").attr("alt", "weather icon");
+      // console.log(response);
       var currentUtcSeconds = response.dt;
       var currentDate = new Date(0);
       currentDate.setUTCSeconds(currentUtcSeconds);
-      $("#currentDate").text(currentDate);
       var tempF = (response.main.temp - 273.15) * 1.80 + 32;
       var windMph = parseInt(response.wind.speed * 2.2369);
-      $("#currentTemp").text(tempF.toFixed(0) + "°");
-      $("#currentHumi").text(response.main.humidity + "%");
-      $("#currentWind").text(windMph + " mph");
       var lat = (response.coord.lat)
       var long = (response.coord.lon)
+
+      $("#currentCity").text(response.name);
+      $("#currentIcon").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
+      $("#currentIcon").attr("alt", "weather icon");
+      $("#currentDate").text(currentDate);
+      $("#currentTemp").text(tempF.toFixed(0) + "°");
+      $("#currentHumi").text(`Humidity: ${response.main.humidity}%`);
+      $("#currentWind").text(`Windspeed: ${windMph}mph`);
+
       $.ajax({
         url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=hourly,minutely&appid=890f39f45059cd40d76b8d16d77d5114",
         method: "GET",
       }).then(function (respond) {
         console.log(respond);
-
         $("#currentUv").text(respond.current.uvi)
         for (let i = 1; i < 6; i++) {
+          var tempF = (respond.daily[i].temp.day - 273.15) * 1.80 + 32;
+          var utcSeconds = respond.daily[i].dt;
+          var date = new Date(utcSeconds * 1000);
+          
+          // date.getUTCDate(utcSeconds);
+          console.log(typeof utcSeconds)
+
           $("#forecast-" + i + "-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[i].weather[0].icon + "@2x.png");
           $("#forecast-" + i + "-img").attr("alt", "weather icon");
-          var utcSeconds = respond.daily[i].dt;
-          var date = new Date(0);
-          date.setUTCSeconds(utcSeconds);
           $("#forecast-" + i + "-date").text(date);
-          var tempF = (respond.daily[i].temp.day - 273.15) * 1.80 + 32;
           $("#forecast-" + i + "-temp").text(tempF.toFixed(0) + "°");
           $("#forecast-" + i + "-humi").text(respond.daily[i].humidity + "%");
         }
