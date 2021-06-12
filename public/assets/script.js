@@ -21,7 +21,7 @@ $("#form").on("submit", function (event) {
       var long = (response.coord.lon)
 
       $("#currentCity").text(response.name);
-      $("#currentIcon").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
+      $("#currentIcon").attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + ".png");
       $("#currentIcon").attr("alt", "weather icon");
       $("#currentDate").text(currentDate);
       $("#currentTemp").text(tempF.toFixed(0) + "°");
@@ -29,7 +29,8 @@ $("#form").on("submit", function (event) {
       $("#currentWind").text(`Windspeed: ${windMph}mph`);
 
       $.ajax({
-        url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=hourly,minutely&appid=890f39f45059cd40d76b8d16d77d5114",
+        url: 
+        "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=hourly,minutely&appid=890f39f45059cd40d76b8d16d77d5114",
         method: "GET",
       }).then(function (respond) {
         console.log(respond);

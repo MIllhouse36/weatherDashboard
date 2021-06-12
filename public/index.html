@@ -12,30 +12,36 @@
 </head>
 
 <body>
-  <div class="container ">
-    <div class="row justify-content-center">
+  <header class="container-fluid text-center text-white bg-dark p-2">
+    <h1>Weather Dashboard</h1>
+  </header>
 
-      <div class="col-2  mt-2">
-        <h5 class="text-center "id="history-card">History</h5>
-      </div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <aside class="col-2  mt-2">
+        <ul class="text-center "id="history-card">History</ul>
+      </aside>
 
       <div class="opener col-8">
         <div class="row text-center text-white justify-content-center">
           <form id="form">
             <h4 class="">Weather</h4>
-            <input class="text-center w-100" id="textarea" type="text">
+            <input class="text-center " id="textarea" type="text">
             <br>
             <button id="submit" class="btn" type="submit">
               <img src="./assets/images/search.svg">
             </button>
-            <h4 id="currentCity"></h4>
-            <img id="currentIcon">
-            <p id="currentDate"></p>
-            <p id="currentTemp"></p>
-            <p id="currentHumi"></p>
-            <p id="currentWind"></p>
-            <p id="currentUv"></p>
           </form>
+            <div>
+              <h4 id="currentCity"></h4>
+              <img id="currentIcon">
+              <p id="currentDate"></p>
+              <p id="currentTemp"></p>
+              <p id="currentHumi"></p>
+              <p id="currentWind"></p>
+              <p id="currentUv"></p>
+            </div>
         </div>
 
         <div class="row justify-content-center">
