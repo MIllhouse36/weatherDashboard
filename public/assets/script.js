@@ -1,7 +1,3 @@
-
-
-
-
 $(document).ready(function(){
   renderHistory();
   $("#form").on("submit", function (event) {
@@ -14,9 +10,6 @@ $(document).ready(function(){
         method: "GET",
       }).then(function (response) {
         // console.log(response);
-        // var currentUtcSeconds = response.dt;
-        // var currentDate = ;
-        // currentDate.setUTCSeconds(currentUtcSeconds);
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         var windMph = parseInt(response.wind.speed * 2.2369);
         var lat = (response.coord.lat)

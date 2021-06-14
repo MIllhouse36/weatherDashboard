@@ -1,126 +1,128 @@
 <!DOCTYPE html>
-<html >
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather app</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>Weather app</title>
-</head>
+  <body>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+      <h1>Weather Dashboard</h1>
+    </header>
 
-<body>
-  <header class="container-fluid text-center text-white bg-dark p-2">
-    <h1>Weather Dashboard</h1>
-  </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-2 mt-2">
+          <ul class="text-center" id="history-card">
+            History
+          </ul>
+        </aside>
 
-  <div class="container-fluid">
-    <div class="row">
-
-      <aside class="col-2  mt-2">
-        <ul class="text-center "id="history-card">History</ul>
-      </aside>
-
-      <div class="opener col-8">
-        <div class="row text-center text-white justify-content-center">
-          <form id="form">
-            <h4 class="">Weather</h4>
-            <input class="text-center " id="textarea" type="text">
-            <br>
-            <button id="submit" class="btn" type="submit">
-              <img src="./assets/images/search.svg">
-            </button>
-          </form>
+        <div class="opener col-8">
+          <div class="row text-center text-white justify-content-center">
+            <form id="form">
+              <h4 class="">Weather</h4>
+              <input class="text-center" id="textarea" type="text" />
+              <br />
+              <button id="submit" class="btn" type="submit">
+                <img src="./assets/images/search.svg" />
+              </button>
+            </form>
             <div>
               <h4 id="currentCity"></h4>
-              <img id="currentIcon">
+              <img id="currentIcon" />
               <p id="currentDate"></p>
               <p id="currentTemp"></p>
               <p id="currentHumi"></p>
               <p id="currentWind"></p>
               <p id="currentUv"></p>
             </div>
-        </div>
+          </div>
 
-        <div class="row justify-content-center text-center">
-
-          <div id="forecast-1" class=" col-md-2 col-sm-4">
-            <div class="h-100 ">
-              <div class="card-image">
-                <img id="forecast-1-img" src="">
+          <div class="row justify-content-center text-center">
+            <div id="forecast-1" class="col-md-2 col-sm-4">
+              <div class="h-100">
+                <h5 id="forecast-1-date"></h5>
+                <div class="card-image">
+                  <img id="forecast-1-img" src="" />
+                </div>
+                <div class="card-content">
+                  <p id="forecast-1-temp"></p>
+                  <p id="forecast-1-humi"></p>
+                </div>
               </div>
-              <div class="card-content ">
-                <p id="forecast-1-date"></p>
-                <p id="forecast-1-temp"></p>
-                <p id="forecast-1-humi"></p>
+            </div>
+
+            <div id="forecast-2" class="col-md-2 col-sm-4">
+              <div class="h-100">
+                <h5 id="forecast-2-date"></h5>
+                <div class="card-image">
+                  <img id="forecast-2-img" src="" />
+                </div>
+                <div class="card-content">
+                  <p id="forecast-2-temp"></p>
+                  <p id="forecast-2-humi"></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="forecast-3" class="col-md-2 col-sm-4">
+              <div class="h-100">
+                <h5 id="forecast-3-date"></h5>
+                <div class="card-image">
+                  <img id="forecast-3-img" src="" />
+                </div>
+                <div class="card-content">
+                  <p id="forecast-3-temp"></p>
+                  <p id="forecast-3-humi"></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="forecast-4" class="col-md-2 col-sm-4">
+              <div class="h-100">
+                <h5 id="forecast-4-date"></h5>
+                <div class="card-image">
+                  <img id="forecast-4-img" src="" />
+                </div>
+                <div class="card-content">
+                  <p id="forecast-4-temp"></p>
+                  <p id="forecast-4-humi"></p>
+                </div>
+              </div>
+            </div>
+
+            <div id="forecast-5" class="col-md-2 col-sm-4">
+              <div class="h-100">
+                <h5 id="forecast-5-date"></h5>
+                <div class="card-image">
+                  <img id="forecast-5-img" src="" />
+                </div>
+                <div class="card-content">
+                  <p id="forecast-5-temp"></p>
+                  <p id="forecast-5-humi"></p>
+                </div>
               </div>
             </div>
           </div>
-
-          <div id="forecast-2" class="col-md-2 col-sm-4">
-            <div class="h-100">
-              <div class="card-image">
-                <img id="forecast-2-img" src="">
-              </div>
-              <div class="card-content">
-                <p id="forecast-2-date"></p>
-                <p id="forecast-2-temp"></p>
-                <p id="forecast-2-humi"></p>
-              </div>
-            </div>
-          </div>
-
-          <div id="forecast-3" class="col-md-2 col-sm-4">
-            <div class="h-100">
-              <div class="card-image">
-                <img id="forecast-3-img" src="">
-              </div>
-              <div class="card-content">
-                <p id="forecast-3-date"></p>
-                <p id="forecast-3-temp"></p>
-                <p id="forecast-3-humi"></p>
-              </div>
-            </div>
-          </div>
-
-          <div id="forecast-4" class="col-md-2 col-sm-4">
-            <div class="h-100">
-              <div class="card-image">
-                <img id="forecast-4-img" src="">
-              </div>
-              <div class="card-content">
-                <p id="forecast-4-date"></p>
-                <p id="forecast-4-temp"></p>
-                <p id="forecast-4-humi"></p>
-              </div>
-            </div>
-          </div>
-
-          <div id="forecast-5" class="col-md-2 col-sm-4">
-            <div class="h-100">
-              <div class="card-image">
-                <img id="forecast-5-img" src="">
-              </div>
-              <div class="card-content">
-                <p id="forecast-5-date"></p>
-                <p id="forecast-5-temp"></p>
-                <p id="forecast-5-humi"></p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./assets/script.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/script.js"></script>
+  </body>
 </html>

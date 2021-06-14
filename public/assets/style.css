@@ -26,12 +26,7 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   width: 25rem;
 }
-/* input:-internal-autofill-selected {
-  
-  background-color: transparent !important;
-  background-image: none !important;
-  color: -internal-light-dark(black, white) !important;
-} */
+
 .opener {
   background-image: url("./images/sunny.jpg");
   height: 50rem;
@@ -44,5 +39,4 @@ select:-webkit-autofill:focus {
 #currentUv {
   background-color: aqua;
   background-size: 2px;
-  /* max-width: 2rem; */
 }
