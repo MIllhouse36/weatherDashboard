@@ -10,10 +10,10 @@ $(document).ready(function(){
         method: "GET",
       }).then(function (response) {
         // console.log(response);
-        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-        var windMph = parseInt(response.wind.speed * 2.2369);
-        var lat = (response.coord.lat)
-        var long = (response.coord.lon)
+        const tempF = (response.main.temp - 273.15) * 1.80 + 32;
+        const windMph = parseInt(response.wind.speed * 2.2369);
+        const lat = (response.coord.lat)
+        const long = (response.coord.lon)
         const date = new Date(response.dt * 1000).toLocaleDateString().toString()
         // console.log(date)
   
@@ -34,16 +34,13 @@ $(document).ready(function(){
           // console.log(respond);
           $("#currentUv").text(respond.current.uvi)
           for (let i = 1; i < 6; i++) {
-            var tempF = (respond.daily[i].temp.day - 273.15) * 1.80 + 32;
-            // var utcSeconds = ;
-            // var date = ;
-            
-            // date.getUTCDate(utcSeconds);
+            const tempF = (respond.daily[i].temp.day - 273.15) * 1.80 + 32;
+            const date = new Date(respond.daily[i].dt * 1000).toLocaleDateString()
             console.log()
   
             $("#forecast-" + i + "-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[i].weather[0].icon + "@2x.png");
             $("#forecast-" + i + "-img").attr("alt", "weather icon");
-            $("#forecast-" + i + "-date").text(new Date(respond.daily[i].dt * 1000).toLocaleDateString());
+            $("#forecast-" + i + "-date").text(date);
             $("#forecast-" + i + "-temp").text(`${tempF.toFixed(0)}°F`);
             $("#forecast-" + i + "-humi").text(`RH: ${respond.daily[i].humidity}%`);
           }
@@ -57,13 +54,13 @@ $(document).ready(function(){
   });
   
   function renderHistory(city) {
-    var historyCard = $("#history-card");
+    let historyCard = $("#history-card");
     historyCard.text("");
-    var searchedCities = [];
+    let searchedCities = [];
     if (JSON.parse(localStorage.getItem("Searched"))) {
       searchedCities = JSON.parse(localStorage.getItem("Searched"));
       $.each(searchedCities, function (i, item) {
-        var listItem = $("<p id=" + item + ">" + item + "</p>");
+        let listItem = $("<p id=" + item + ">" + item + "</p>");
         historyCard.append(listItem);
       });
     }
