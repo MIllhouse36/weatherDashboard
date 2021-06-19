@@ -39,4 +39,6 @@ select:-webkit-autofill:focus {
 #currentUv {
   background-color: aqua;
   background-size: 2px;
+  padding: 0, 3rem;
+  max-width: fit-content;  
 }

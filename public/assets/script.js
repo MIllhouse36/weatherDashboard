@@ -3,6 +3,7 @@ $(document).ready(function(){
   $("#form").on("submit", function (event) {
     event.preventDefault();
     var cityName = $("#textarea").val().trim()
+    
     if (cityName) {
       $.ajax({
         url:
@@ -36,8 +37,7 @@ $(document).ready(function(){
           for (let i = 1; i < 6; i++) {
             const tempF = (respond.daily[i].temp.day - 273.15) * 1.80 + 32;
             const date = new Date(respond.daily[i].dt * 1000).toLocaleDateString()
-            console.log()
-  
+          
             $("#forecast-" + i + "-img").attr("src", "https://openweathermap.org/img/wn/" + respond.daily[i].weather[0].icon + "@2x.png");
             $("#forecast-" + i + "-img").attr("alt", "weather icon");
             $("#forecast-" + i + "-date").text(date);
